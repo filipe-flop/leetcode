@@ -18,22 +18,28 @@ namespace leetcode_csharp.arrays
             {
                 if (s[i].ToString().Equals(" ") || i == s.Length - 1)
                 {
-                    while (l != r)
+                    if (i == s.Length - 1)
+                        r++;
+                    while (r > l)
                     {
                         ret[l] = s[r - 1];
+                        ret[r - 1] = s[l];
                         l++;
                         r--;
                     }
-                    ret[l] = s[r - 1];
-                    l = i;
-                    r = i;
+                    if (s[i].ToString().Equals(" "))
+                    {
+                        ret[i] = ' ';
+                        l = i+1;
+                        r = i+1;
+                    }
                 }
                 else
                 {
                     r++;
                 }
             }
-            return s;
+            return new string(ret);
         }
     }
 }
