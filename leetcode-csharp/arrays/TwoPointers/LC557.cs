@@ -4,10 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace leetcode_csharp.arrays
+namespace leetcode_csharp.arrays.TwoPointers
 {
     public class LC557
     {
+        // accepted
+        // 8ms runtime
+        // beats 36.11%
         public string ReverseWords(string s)
         {
             int l = 0;
@@ -30,8 +33,8 @@ namespace leetcode_csharp.arrays
                     if (s[i].ToString().Equals(" "))
                     {
                         ret[i] = ' ';
-                        l = i+1;
-                        r = i+1;
+                        l = i + 1;
+                        r = i + 1;
                     }
                 }
                 else
@@ -51,7 +54,7 @@ namespace leetcode_csharp.arrays
             {
                 if (chars[i] == ' ' || i == chars.Length - 1)
                 {
-                    int end = (i == chars.Length - 1 && chars[i] != ' ') ? i + 1 : i;
+                    int end = i == chars.Length - 1 && chars[i] != ' ' ? i + 1 : i;
                     while (start < end)
                     {
                         char temp = chars[start];
