@@ -45,7 +45,7 @@ namespace leetcode_csharp.arrays.TwoPointers
             return new string(ret);
         }
 
-        public string ReverseWordsBetterSolution(string s)
+        public string Solution(string s)
         {
             char[] chars = s.ToCharArray();
             int start = 0;
