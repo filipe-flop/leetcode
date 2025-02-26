@@ -1,1 +1,36 @@
-﻿
+﻿A complexidade de tempo do seu algoritmo pode ser analisada dividindo-o em três partes principais:
+
+### 1️⃣ **Ordenação do array**  
+```csharp
+Array.Sort(nums);
+```
+- A ordenação do array custa **O(n log n)**, pois a implementação de `Array.Sort()` em C# usa **QuickSort/Timsort**, que tem complexidade média **O(n log n)**.
+
+### 2️⃣ **Loop externo sobre `i`**  
+```csharp
+for (int i = 0; i < nums.Length; i++)
+```
+- Esse loop percorre todos os elementos do array **O(n)** vezes.
+
+### 3️⃣ **Dois ponteiros `l` e `r` (Loop interno)**  
+```csharp
+while (l < r)
+```
+- Para cada `i`, usamos a abordagem de **dois ponteiros (`l` e `r`)** para encontrar pares que somam `-nums[i]`.
+- O ponteiro `l` começa em `i + 1` e `r` no final do array, movendo-se até `l < r`.
+- Cada iteração **move `l` para frente ou `r` para trás**, garantindo que cada elemento seja processado **no máximo uma vez**.
+- Como cada iteração reduz `r - l`, a complexidade do loop interno é **O(n)**.
+
+---
+
+### **Analisando a complexidade total**  
+- O loop externo roda **O(n)** vezes.
+- O loop interno (dois ponteiros) roda **O(n)** no pior caso.
+- Como a ordenação custa **O(n log n)**, a complexidade total é:
+
+\[
+O(n \log n) + O(n^2) = O(n^2)
+\]
+
+### **Conclusão**  
+A complexidade do seu algoritmo é **O(n²)**, pois o tempo gasto no loop aninhado domina o custo da ordenação. Essa é a complexidade ideal para este problema usando a abordagem de dois ponteiros. 🚀
