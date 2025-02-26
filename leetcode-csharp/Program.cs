@@ -1,4 +1,4 @@
 ﻿using leetcode_csharp.arrays.TwoPointers;
 
-LC611 lC611 = new LC611();
-lC611.TriangleNumber([4, 2, 3, 4]);
+LC016 lC016 = new LC016();
+lC016.ThreeSumClosest([-1, 2, 1, -4], 1);
