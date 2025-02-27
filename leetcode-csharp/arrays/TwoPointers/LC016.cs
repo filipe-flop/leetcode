@@ -8,6 +8,10 @@ namespace leetcode_csharp.arrays.TwoPointers
 {
     public class LC016
     {
+        // 16 3Sum Closest
+        // accepted (after struggling and see solution)
+        // runtime 13ms
+        // beats 82.89%
         public int ThreeSumClosest(int[] nums, int target)
         {
             int ret = 0;
@@ -17,7 +21,7 @@ namespace leetcode_csharp.arrays.TwoPointers
             Array.Sort(nums);
             for (int i = 0; i < nums.Length - 2; i++)
             {
-                left = nums[i + 1];
+                left = i + 1;
                 right = nums.Length - 1;
 
                 while (left < right)

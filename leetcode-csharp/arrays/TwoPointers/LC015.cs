@@ -9,6 +9,7 @@ namespace leetcode_csharp.arrays.TwoPointers
 {
     public class LC015
     {
+        // 15 3Sum
         // accepted
         // 35ms runtime
         // beats 69.46%
