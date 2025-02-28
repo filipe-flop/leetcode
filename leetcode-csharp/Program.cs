@@ -1,4 +1,4 @@
 ﻿using leetcode_csharp.arrays.TwoPointers;
 
-LC075 lC075 = new LC075();
-lC075.SortColors([2, 0, 1]);
+LC283 lC283 = new LC283();
+lC283.MoveZeroes([0, 1, 0, 3, 12]);

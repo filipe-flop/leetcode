@@ -9,6 +9,9 @@ namespace leetcode_csharp.arrays.TwoPointers
     public class LC075
     {
         // 75 - Sort Colors
+        // accepted (after struggling and see hint)
+        // runtime 0ms
+        // beats 100%
         public void SortColors(int[] nums)
         {
             int i = 0;
@@ -17,6 +20,9 @@ namespace leetcode_csharp.arrays.TwoPointers
 
             while (i <= right)
             {
+                int l = nums[left];
+                int r = nums[right];
+                int i2 = nums[i];
                 if (nums[i] == 0)
                 {
                     if (i == left)
@@ -26,7 +32,7 @@ namespace leetcode_csharp.arrays.TwoPointers
                     }
                     else
                     {
-                        int temp = nums[i];
+                        int temp = nums[left];
                         nums[left] = nums[i];
                         nums[i] = temp;
                         left++;
