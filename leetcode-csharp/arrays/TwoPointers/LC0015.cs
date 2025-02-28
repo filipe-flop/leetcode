@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace leetcode_csharp.arrays.TwoPointers
 {
-    public class LC015
+    public class LC0015
     {
         // 15 3Sum
         // accepted

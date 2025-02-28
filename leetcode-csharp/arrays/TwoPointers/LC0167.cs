@@ -7,7 +7,7 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace leetcode_csharp.arrays.TwoPointers
 {
-    public class LC167
+    public class LC0167
     {
         // 167 Two Sum
         // accepted

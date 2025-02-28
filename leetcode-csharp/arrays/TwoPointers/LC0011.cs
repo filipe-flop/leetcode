@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace leetcode_csharp.arrays.TwoPointers
 {
-    public class LC011
+    public class LC0011
     {
         // 11 Max Area
         // accepted

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace leetcode_csharp.arrays.TwoPointers
 {
-    public class LC611
+    public class LC0611
     {
         // 611 - Triangle Number
         // accepted

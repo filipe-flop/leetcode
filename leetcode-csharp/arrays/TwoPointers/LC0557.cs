@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace leetcode_csharp.arrays.TwoPointers
 {
-    public class LC557
+    public class LC0557
     {
         // 557 Reverse Words
         // accepted

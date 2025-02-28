@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace leetcode_csharp.arrays.TwoPointers
 {
-    public class LC016
+    public class LC0016
     {
         // 16 3Sum Closest
         // accepted (after struggling and see solution)

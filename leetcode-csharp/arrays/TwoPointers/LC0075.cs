@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace leetcode_csharp.arrays.TwoPointers
 {
-    public class LC075
+    public class LC0075
     {
         // 75 - Sort Colors
         // accepted (after struggling and see hint)

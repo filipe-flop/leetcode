@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace leetcode_csharp.arrays.TwoPointers
 {
-    public class LC283
+    public class LC0283
     {
         // accepted
         // runtime 1ms
