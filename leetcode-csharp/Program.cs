@@ -1,4 +1,4 @@
-﻿using leetcode_csharp.arrays.TwoPointers;
+﻿using leetcode_csharp.arrays.BinarySearch;
 
-LC2161 lC2161 = new LC2161();
-lC2161.PivotArray([9, 12, 5, 10, 14, 3, 10], 10);
+LC0035 lC0035 = new LC0035();
+lC0035.SearchInsert([1, 3, 5, 6], 7);
