@@ -8,6 +8,9 @@ namespace leetcode_csharp.arrays.BinarySearch
 {
     public class LC0035
     {
+        // accepted
+        // runtime 0ms
+        // beats 100%
         public int SearchInsert(int[] nums, int target)
         {
             int l = 0;
@@ -19,7 +22,14 @@ namespace leetcode_csharp.arrays.BinarySearch
                 mid = (l + r) / 2;
                 if (l == r)
                 {
-                    return mid;
+                    if (nums[mid] < target)
+                    {
+                        return mid + 1;
+                    }
+                    else
+                    {
+                        return mid;
+                    }
                 }
 
                 if (nums[mid] == target)
