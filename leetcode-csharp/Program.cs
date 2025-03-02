@@ -1,4 +1,4 @@
 ﻿using leetcode_csharp.arrays.BinarySearch;
 
-LC0069 lC0069 = new LC0069();
-lC0069.MySqrt(0);
+LC0033 lC0033 = new LC0033();
+lC0033.Search([3,1], 1);
