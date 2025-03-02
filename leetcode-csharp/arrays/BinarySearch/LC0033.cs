@@ -8,76 +8,46 @@ namespace leetcode_csharp.arrays.BinarySearch
 {
     public class LC0033
     {
+        // accepted
+        // runtime 0ms
+        // beats 100%
         public int Search(int[] nums, int target)
         {
-            int l = 0;
-            int r = nums.Length - 1;
+            int left = 0;
+            int right = nums.Length - 1;
 
-            if (r == 0)
+            while (left <= right)
             {
-                if (nums[0] == target)
+                int mid = right - ((right - left) / 2);
+                if (nums[mid] == target)
                 {
-                    return 0;
+                    return mid;
                 }
-                else
-                {
-                    return -1;
-                }
-            }
-            
-            while (l < r)
-            {
-                int mid = r - ((r - l) / 2);
-                if (nums[mid] > nums[l] && nums[mid] > nums[r])
-                {
-                    l = mid + 1;
-                }
-                else
-                {
-                    r = mid - 1;
-                }
-            }
 
-            int pivot = l;
-            if (nums[pivot] > target)
-            {
-                l = 0;
-                r = pivot - 1;
-            }
-            else
-            {
-                l = pivot;
-                r = nums.Length - 1;
-            }
-
-            while (l < r)
-            {
-                int mid = r - ((r - l) / 2);
-                if (mid == r)
+                if (nums[left] <= nums[mid])
                 {
-                    if (nums[l] == target)
+                    if (nums[left] <= target && target < nums[mid])
                     {
-                        return l;
-                    }
-                    else if (nums[r] == target)
-                    {
-                        return r;
+                        right = mid - 1;
                     }
                     else
                     {
-                        return -1;
+                        left = mid + 1;
                     }
-                }
-                if (nums[mid] >= target)
-                {
-                    r = mid;
                 }
                 else
                 {
-                    l = mid;
+                    if (nums[mid] < target && target <= nums[right])
+                    {
+                        left = mid + 1;
+                    }
+                    else
+                    {
+                        right = mid - 1;
+                    }
                 }
             }
-            return r;
+            return -1;
         }
     }
 }
