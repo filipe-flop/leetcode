@@ -10,6 +10,14 @@ namespace leetcode_csharp.arrays.SlidingWindow
     {
         public bool ContainsNearbyDuplicate(int[] nums, int k)
         {
+            int r = 0;
+            int l = 0;
+
+            while (r < nums.Length)
+            {
+
+            }
+
             return false;
         }
     }
