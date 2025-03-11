@@ -8,7 +8,6 @@ namespace leetcode_csharp.arrays.SlidingWindow
 {
     public class LC0219
     {
-        // solution not made by me
         public bool ContainsNearbyDuplicate(int[] nums, int k)
         {
             Dictionary<int, int> dictionary = new Dictionary<int, int>();
