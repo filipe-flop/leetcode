@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace leetcode_csharp.amazon.avaliations.avaliation01
 {
+    //passed
     public class Av01Question1
     {
         public static long getMinimumValue(List<int> power, int armor)
