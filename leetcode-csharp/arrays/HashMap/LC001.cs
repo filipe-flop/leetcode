@@ -17,9 +17,9 @@ namespace leetcode_csharp.arrays.HashMap
 
             for (int i = 0; i < nums.Length; i++)
             {
-                int remainder = target - nums[i];
-                if (d.ContainsKey(remainder)) {
-                    return new int[] { d[remainder], i };
+                int complement = target - nums[i];
+                if (d.ContainsKey(complement)) {
+                    return new int[] { d[complement], i };
                 }
                 d[nums[i]] = i;
             }
