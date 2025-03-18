@@ -11,6 +11,7 @@ namespace leetcode_csharp.arrays.HashMap
         //accepted
         //runtime 1ms
         //beats 98.14%
+        //space complexity O(n)
         public int[] TwoSum(int[] nums, int target)
         {
             Dictionary<int, int> d = new Dictionary<int, int>();
